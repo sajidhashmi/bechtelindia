@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./content/css/styles.css">
+    <link rel="stylesheet" href="./content/css/bootstrap.min.css">
+    <script src="./content/script/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./content/script/popper.min.js"></script>
+    <script src="./content/script/bootstrap.min.js"></script> -->
+    <script src="./content/script/jquery-3.3.1.slim.min.js"></script>
+    <script src="./content/script/popper.min.js"></script>
+    <script src="./content/script/bootstrap.min.js"></script>
+    <script src="./content/script/scripts.js"></script>
+
+    <script type="text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("top-main-image").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("top-main-image").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "./content/images/banner1.jpg";
+        images[1] = "./content/images/banner2.jpg";
+        images[2] = "./content/images/banner3.jpg";
+    </script>
+</head>
+
+<body onload="startTimer()">
+    <div class="main-container">
+        <!-- <div class="header">
+            <div class="header-logo">
+                <img src="./content/images/bechtel-logo.svg" alt="logo" />
+                <div>Bechtel India</div>
+            </div>
+        </div> -->
+        <!-- <div class="sub-header"> -->
+        <div class="sub-header-div2">
+            <img id="top-main-image" src="./content/images/banner1.jpg" />
+            <div class="banner">
+                <h1 id="tab-heading">BECHTEL IN INDIA</h1>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="main-content">
+            <div class="main-content-div1">
+                <div id="main" style="display:block;" class="tabcontent">
+                    <!-- <h2 class="main-heading">Bechtel in India</h2> -->
+                    <p>
+                    <div>
+                        <h2 class="sub-heading">Bechtel in India</h2>
+                        <div class="container-flex">
+                            <div class="container-flex-left">
+                                <div class="sub-main-content">Bechtel India is serving as a major Project Execution
+                                    office for
+                                    Bechtel’s Global Business Units providing
+                                    Basic and Front-End Design, Engineering, Procurement, Construction and Support
+                                    services to
+                                    projects in Infrastructure, Energy, and Mining and Metal markets
+                                    around the globe. Bechtel India offers a full suite of services supporting all
+                                    phases of the
+                                    project from concept studies, including feasibility, FEED,
+                                    and pre-FEED studies to full EPC/ EPCM project execution.
+                                </div>
+                                <div class="sub-main-content">Bechtel in India operates from Gurgaon office near the
+                                    Indian
+                                    Capital and from Vadodara office in Western India. Both offices
+                                    are equipped with the most modern automation, infrastructure, and core communication
+                                    systems. The composite team has delivered large and medium sized
+                                    projects to our customers across six continents in the world.
+                                </div>
+                            </div>
+                            <div class="container-flex-right"><img src="./content/images/projects.JPG" /> </div>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <h2 class="sub-heading">Featured Projects</h2>
+                        <div class="sub-main-content">
+                            Bechtel India Engineering continues to focus on technical excellence to deliver complex and
+                            diverse projects across various Global Business Units.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pillar-content">
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/jamnagar.JPG" /> </div>
+                                <div class="pillar-heading">Energy Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/projects/jamnagar-oil-refinery/">Jamnagar</a>
+                                </div>
+                            </div>
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/lasbambas.JPG" /> </div>
+                                <div class="pillar-heading">Metal and Mining Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/projects/las-bambas-copper-concentrator/">Las
+                                        Bambas</a></div>
+                            </div>
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/muscat.JPG" /> </div>
+                                <div class="pillar-heading">Civil Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/projects/oman-airport-expansion-muscat/">Muscat
+                                        Airport</a></div>
+                            </div>
+                        </div>
+                        <div class="pillar-content">
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/panda.JPG" /> </div>
+                                <div class="pillar-heading">Power Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/projects/panda-power-projects/">Panda Power
+                                        Plant</a></div>
+                            </div>
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/ivanpah.JPG" /> </div>
+                                <div class="pillar-heading">Renewable Power Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/projects/ivanpah-solar-electric-generating-system/">Ivanpah
+                                        Solar Power Plant</a>
+                                </div>
+                            </div>
+                            <div class="pillar-content-container">
+                                <div class=""><img src="./content/images/kochi.JPG" /> </div>
+                                <div class="pillar-heading">Social Impact Projects</div>
+                                <div class="pillar-content"><a target="_blank"
+                                        href="https://www.bechtel.com/blog/sustainability/april-2022/bechtel-dot-org-kochi-india/">Kochi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="sub-heading">Diversity, Equity and Inclusion</h2>
+                        <div class="container-flex">
+                            <div class="sub-main-content container-flex-left">
+                                To help our diverse colleagues thrive, Bechtel India offers robust programs and policies
+                                including flexible work arrangements, parental leave for new dads, mentoring program for
+                                all
+                                employees, specialized training on Diversity, Equity and Inclusion including inclusive
+                                communication, networking support, options to be on unpaid leave for upto a year for
+                                family
+                                reasons or self-development etc.
+                                Bechtel values the health and welfare of our colleague and their families around the
+                                world
+                                and offers Employee Assistance Program to seek support with any work or professional
+                                issue
+                                including access to counselling and emotional support.
+                            </div>
+                            <div class="container-flex-right"><img height="250px" src="./content/images/swe.JPG" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="sub-heading">Corporate Social Responsibility</h2>
+                        <div class="container-flex">
+                            <div class="sub-main-content container-flex-left">
+                                Alongside delivering excellence to our customers, Bechtel India is committed to driving
+                                positive impact on the local communities. Our colleagues work with the communities to
+                                improve the economic, educational, and social environment with an emphasis on promoting
+                                education among women and specially abled persons.
+                            </div>
+                            <div class="container-flex-right"><img height="250px" src="./content/images/csr.JPG" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="sub-heading">Contact Us</h2>
+                        <div class="sub-main-content"> Tel: +91 124 409-8000</div>
+                        <div class="sub-main-content">Fax: +91 124 234 3110 / -3505</div>
+                        <div class="sub-main-content">Please visit our <a target="_blank"
+                                href="https://www.bechtel.com/about-us/offices/">offices</a> page for a complete list of
+                            locations.
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="sub-heading">Join our team</h2>
+                        <div class="sub-main-content">
+                            <a target="_blank" href="https://jobs.bechtel.com/">View job openings</a> in India and
+                            around the world.
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
