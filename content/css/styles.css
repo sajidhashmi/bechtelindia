@@ -95,19 +95,19 @@ body {
 
 .container-flex-left {
     flex: 1;
-    padding-right: 1vh;
+    padding-right: 2vh;
 }
 
 .container-flex-right {
     flex: 1;
-    padding-left: 1vh;
+    padding-left: 2vh;
     text-align: center;
 }
 
 .container-flex-middle {
     flex: 1;
-    padding-left: 1vh;
-    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .contact-us-content {
@@ -166,7 +166,7 @@ body {
     color: #222;
     font-size: 18px;
     line-height: 1.4em;
-
+    padding-bottom: 1vh;
 }
 
 .sub-header-heading {
@@ -179,21 +179,21 @@ body {
 
 .pillar-content-container {
     padding-right: 20px;
+    padding-bottom: 1vh;
 }
 
 .pillar-content {
     display: flex;
     flex-direction: row;
-    margin-top: 1vh;
     padding-right: 10px;
     justify-content: left;
     line-height: 1.4em;
     text-align: left;
+    padding-bottom: 1vh;
 }
 
 .pillar-content img {
     width: 90%;
-    margin-bottom: 10px;
 }
 
 .pillar-heading {
@@ -218,6 +218,10 @@ body {
     text-align: center;
     overflow: hidden;
     z-index: 999;
+}
+
+.div-center {
+    text-align: center;
 }
 
 
